@@ -21,7 +21,7 @@ Here are a few sneak peek of the app itself.
 
 ### Part 1: Sales by Game Characteristics
 
-![sales_by_characteristics](https://ibb.co/y56HPTJ)
+![hi]({{"assets/imgs/sales_by_char_vgsales.png" | absolute_url}})
 
 ### Part 2: Sales by Region
 
