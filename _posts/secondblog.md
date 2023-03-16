@@ -51,3 +51,4 @@ The commands I implemented were labeled 0 through 9. They are as follows:
 **Command 8**: Here, you input a Chicago zip code, and the program outputs store types in that zip code (i.e. restaurants, grocery stores, hospitals, daycares) and what percentage of store types in that zip code passed inspection.
 
 **Command 9**: Here, you input a store ID and the program outputs what percent of that stores inspections that store passed, failed, passed with conditions, etc.
+
