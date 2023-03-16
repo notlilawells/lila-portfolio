@@ -6,83 +6,48 @@ preview: Designing a relational database for Chicago Food Inspections
 image: 'https://source.unsplash.com/TLD6iCOlyb0'
 ---
 
-# Heading One
+# Overview 
 
-**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+I've been working with relational databases for some time now, so I figured it was time to try creating a database myself (with an interactive Python application to match!)
 
-## This is Heading Two
+When searching for suitable datasets to convert into database form, I stumbled across a dataset by the the City of Chicago. The dataset (originally in CSV format) contained information derived from inspections of restaurants and other food establishments in Chicago from January 1, 2010 to the present. Inspections were performed by staff from the Chicago Department of Public Health Protection Program using a standardized procedure. The results of the inspection are inputted into a dataset file, then reviewed and approved by a State of Illinois Licensed Environmental Health Practitioner (LEHP)
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+## Live Demo 
 
-### This is Heading Three with `inline code`
+You can try out my project live by clicking [here](https://replit.com/@LilaWells/Food-Inspections-App)
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+## The Dataset 
 
-#### This is Heading Four With Code Block
+The uncleaned dataset had over 600,000 observations across 20+ variables. So, I downloaded the file in CSV format and cleaned it with Python (i.e., removing duplicates and null values as well as outliers). I then divided the dataset into seven CSV files, and used Microsoft Azure's Import Wizard commands to refine and upload the CSV files to the cloud into a new database (which I very creatively called Food Food-Inspections
 
-```
+Each cleaned CSV file represented a future table in the database. When using Azure's Import Wizard commands, I specified several Foreign and Primary key constraints within each table (forming relationships between them).
 
-# Auto-generated based on the server's hostname.
-# Set this to the URL used to access the Firezone Web UI.
-default['firezone']['external_url'] = 'https://firezone.example.com'
+## Entity Relationship Diagram
 
-# Specify the path to your SSL cert and private key.
-# If set to nil (default), a self-signed cert will be generated for you.
-default['firezone']['ssl']['certificate'] = '/path/to/cert.pem'
-default['firezone']['ssl']['certificate_key'] = '/path/to/key.pem'
+See the entity relationship diagram I created for the Food Inspections database below. You will see that, within the database itself, most tables have a one-to-many relationship with those adjascent to them.
 
-```
+![project04 drawio](https://user-images.githubusercontent.com/101524157/214749972-0bb15ced-fde3-4269-9d1a-c253ab54c0d4.png)
 
-##### Heading Five Code With Max Height
+### The Commands
 
-```
+The commands I implemented were labeled 0 through 9. They are as follows:
 
-# Auto-generated based on the server's hostname.
-# Set this to the URL used to access the Firezone Web UI.
-default['firezone']['external_url'] = 'https://firezone.example.com'
+**Command 0**: Outputs information on the database itself (i.e., how many stores and inspections, where the data comes from, where you can learn more about the data source).
 
-# Specify the path to your SSL cert and private key.
-# If set to nil (default), a self-signed cert will be generated for you.
-default['firezone']['ssl']['certificate'] = '/path/to/cert.pem'
-default['firezone']['ssl']['certificate_key'] = '/path/to/key.pem'
+**Command 1**: Outputs the number of inspections and the number of food establishments in the database.
 
-# Auto-generated based on the server's hostname.
-# Set this to the URL used to access the Firezone Web UI.
-default['firezone']['external_url'] = 'https://firezone.example.com'
+**Command 2**: Outputs the percent of inspections in the database by inspection result.
 
-# Specify the path to your SSL cert and private key.
-# If set to nil (default), a self-signed cert will be generated for you.
-default['firezone']['ssl']['certificate'] = '/path/to/cert.pem'
-default['firezone']['ssl']['certificate_key'] = '/path/to/key.pem'
+**Command 3**: Here, you input a store type (ex. Restaurant, Grocery Store, or Daycare) and the program outputs the store ID, name, zip code and number of inspections for stores in that type.
 
-```
+**Command 4**: Here, you input a store type (ex. Restaurant, Grocery Store, or Daycare) and the program outputs the store ID, name, zip code, and inspection results for stores in that type that failed inspection.
 
-## BLockquote
+**Command 5**: Here, you input a store ID and the program outputs information on that store and its inspections.
 
-> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+**Command 6**: Here, you input a Chicago zip code, and the program outputs information on stores that failed inspection in that zip code.
 
-## Ordered List with horizontal line
+**Command 7**: Here, you input a Chicago zip code, and the program outputs information on stores that passed inspection in that zip code.
 
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
+**Command 8**: Here, you input a Chicago zip code, and the program outputs store types in that zip code (i.e. restaurants, grocery stores, hospitals, daycares) and what percentage of store types in that zip code passed inspection.
 
----
-
-## Unordered List With Horizontal line
-
-- First item
-- Second item
-- Third item
-- Fourth item
-
----
-
-## Links
-
-My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
-
-## Images
-
-![An old rock in the desert](https://images.unsplash.com/photo-1654475677192-2d869348bb4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+**Command 9**: Here, you input a store ID and the program outputs what percent of that stores inspections that store passed, failed, passed with conditions, etc.
