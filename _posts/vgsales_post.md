@@ -20,7 +20,7 @@ You can interact with the app by clicking [here](https://lila-wells.shinyapps.io
 Here are a few sneak peek of the app itself. 
 
 ### Part 1: Sales by Game Characteristics
-![An old rock in the desert](https://images.unsplash.com/photo-1654475677192-2d869348bb4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+![sales-by-characteristics](https://user-images.githubusercontent.com/101524157/225711131-0b20a482-1d0f-4cbd-b4ee-c89171ccafe4.png)
 
 This facet of the Video Game Sales Shiny app gives you insight into how the global sales of Kinect Adventures! relative to the average global sales of other games from the same genre, platform, publisher or year published. To operate this section of the app, choose a game in the first dropdown menu, then choose a method of comparison. Your choices are: 'Same Genre', 'Same Platform', 'Same Publisher', or 'Same Year Published'. The plot will then populate a bar for the global sales for the game you choose, as well as a bar representing the average sales for other games in that category
 
@@ -28,7 +28,7 @@ But wait! The table is also interactive! The table below the bar plot will also 
 
 ### Part 2: Sales by Region
 
-![sales_by_characteristics](https://user-images.githubusercontent.com/101524157/214749972-0bb15ced-fde3-4269-9d1a-c253ab54c0d4.png)
+![sales_by_region](https://user-images.githubusercontent.com/101524157/225711469-fefdbd7a-88a4-415e-91c3-2e7c957dbcec.png)
 
 This facet of the Video Game Sales Shiny app gives you more detailed insights into the regional and global sales of Kinect Adventures! as well as where it was the most and least successful. To operate this section of the app, choose a game in the first dropdown menu, then select a sales region to highlight. Your choices are: 'North America', 'Europe', 'Japan', 'Other', or 'Global'. Note that choosing 'Global' will show you the game's total sales (as global sales encompass North American, European, Japanese, and other sales).
 
