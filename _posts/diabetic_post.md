@@ -16,9 +16,16 @@ By analyzing data compiled from 130 U.S. hospitals between 1999 and 2008, we exp
 
 _Project Team: Lila Wells, Amy Wang, Anastasia Wei, Kaitlyn Hung_
 
+# Key Links 
+> 1. [Download the project report](http://www.google.com) 
+> 2. [View the project code](http://www.google.com)
+> 3. [Explore the full GitHub repository](http://www.google.com)
+
+
 # Problem Statement
 
 To approach our analysis, we first articulated a question to guide our modeling process: **What is the relationship between the different factors associated with a patient’s hospital stay and their likelihood of being readmitted to that hospital within 30 days?**
+
 
 In this question, we are most interested in identifying the relationship between predictors (here, factors associated with a patient’s hospital stay) and a response (whether a patient is readmitted or not). Thus, our model is mainly concerned with inference.
 
@@ -37,3 +44,15 @@ Observations had to satisfy the following criteria to be included in this datase
 - The patient must have received medications during their hospital stay
 
 We chose to use this dataset because it contains our variable of interest (whether a patient was readmitted or not) along with ~46 potential predictors to use to fit the model. This dataset is extremely robust and comprehensive, including information on over 10,000 patients in the US across a decade. This broad and comprehensive data increases the generalizability of our study’s findings. Its number of predictors also allows us to approach our problem from multiple perspectives: (1) the patient’s characteristics, (2) their hospital stay and medical history, and (3) the treatments administered to them.
+
+# Stakeholders
+
+XXX
+
+# Finalized Model
+
+XXX
+
+# Recommendations
+
+XXX

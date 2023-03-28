@@ -15,7 +15,7 @@ In this project, I created an interactive Shiny App using R to explore top gross
 
 You can interact with the app by clicking [here](https://lila-wells.shinyapps.io/Video_Game_Sales/?_ga=2.137736181.472847955.1677886303-1524006374.1677565427)
 
-# Sneak Peek of the App 
+# The App at a Glance 
 
 Here are a few sneak peek of the app itself. 
 
