@@ -100,7 +100,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
                   {showResume && (
                     <Button
-                      onClick={() => router.push("/resume")}
+                      onClick={() => window.open("https://drive.google.com/file/d/18ky4LIU1PpzE0Ac5hhgOIXvwufrN07GV/view?usp=share_link")} // router.push("/resume")}
                       classes="first:ml-1"
                     >
                       Resume
@@ -138,7 +138,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             )}
             {showResume && (
               <Button
-                onClick={() => router.push("/resume")}
+                onClick={() => window.open("https://drive.google.com/file/d/18ky4LIU1PpzE0Ac5hhgOIXvwufrN07GV/view?usp=share_link")}// router.push("/resume")}
                 classes="first:ml-1"
               >
                 Resume
@@ -167,7 +167,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             )}
             {showResume && (
               <Button
-                onClick={() => router.push("/resume")}
+                onClick={() => window.open("https://drive.google.com/file/d/18ky4LIU1PpzE0Ac5hhgOIXvwufrN07GV/view?usp=share_link")} // router.push("/resume")}
                 classes="first:ml-1"
               >
                 Resume
