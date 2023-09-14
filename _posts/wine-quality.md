@@ -1,6 +1,6 @@
 ---
 date: '2023-09-14T20:45:17.459Z'
-title: Nonlinear Modeling to Predict Wine Quality
+title: Predicting Wine Quality with Nonlinear Models
 tagline: Data Science / Machine Learning
 preview: >-
   Nonlinear modeling to predict wine quality in the Vinho Verde region.
