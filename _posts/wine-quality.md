@@ -4,7 +4,7 @@ title: Nonlinear Modeling to Predict Wine Quality
 tagline: Data Science / Machine Learning
 preview: >-
   Nonlinear modeling to predict wine quality in the Vinho Verde region.
-image: 'https://images.unsplash.com/ckjuMXBLu7o'
+image: 'https://source.unsplash.com/ckjuMXBLu7o'
 ---
 # Overview
 
