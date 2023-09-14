@@ -3,10 +3,7 @@ date: '2023-09-14T20:45:17.459Z'
 title: Nonlinear Modeling to Predict Wine Quality
 tagline: Data Science / Machine Learning
 preview: >-
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it to make a type
-  specimen book.
+  Nonlinear modeling to predict wine quality in the Vinho Verde region.
 image: 'https://images.unsplash.com/ckjuMXBLu7o'
 ---
 # Overview
@@ -18,6 +15,20 @@ However, a new method is emerging in the industry to reduce the human error and 
 By analyzing data compiled from over 6,000 wines in the Vinho Verde region from 2004 to 2007, we build 3 linear and 9 nonlinear machine learning, tree-based, and boosting models to predict wine quality based on a wine’s physical and chemical attributes. We implement several techniques (rigorous hyperparameter tuning, cross-validation, voting and stacking ensemble methods) to answer this question—optimizing Root Mean Squared Error (RMSE). 
 
 Our finalized ensemble yields RMSE of 0.642. This translates to the ability to correctly predict quality scores on a scale from 1 to 10 with a ±1 error. Thus, our ensemble offers our stakeholders a robust method to determine, validate, and standardize wine quality scores.
+
+# Models Developed 
+
+> 1. Intercept base model
+> 2. Ridge & lasso regression 
+> 3. MARS
+> 4. Decision trees
+> 5. Bagging decision trees
+> 6. Random forest
+> 7. AdaBoost
+> 8. Gradient Boost 
+> 9. XGBoost
+> 10. CatBoost
+> 11. LightGBM
 
 # Data Source
 
