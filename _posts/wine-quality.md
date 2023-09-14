@@ -11,6 +11,14 @@ image: 'https://images.unsplash.com/ckjuMXBLu7o'
 ---
 # Overview
 
+A wine’s quality is an established metric for its price. Yet determining wine quality has largely been a subjective practice—determined by oenologists and sommeliers. 
+
+However, a new method is emerging in the industry to reduce the human error and subjectivity of wine quality determination -- evaluating quality based on a wine’s physical and chemical attributes. As quality equates to price, wine producers, mass consumers (like restaurants and bars), and wine evaluators like oenologists and sommeliers all have a vested interest in furthering this new mathematical method to avoid subjective error. 
+
+By analyzing data compiled from over 6,000 wines in the Vinho Verde region from 2004 to 2007, we build 3 linear and 9 nonlinear machine learning, tree-based, and boosting models to predict wine quality based on a wine’s physical and chemical attributes. We implement several techniques (rigorous hyperparameter tuning, cross-validation, voting and stacking ensemble methods) to answer this question—optimizing Root Mean Squared Error (RMSE). 
+
+Our finalized ensemble yields RMSE of 0.642. This translates to the ability to correctly predict quality scores on a scale from 1 to 10 with a ±1 error. Thus, our ensemble offers our stakeholders a robust method to determine, validate, and standardize wine quality scores.
+
 # Data Source
 
 We elected to use data set entitled "Wine Quality Data Set" from the UCI Machine Learning Repository. The dataset can be accessed [here](https://archive.ics.uci.edu/dataset/186/wine+quality). This dataset helped us to address our project by comprehensively cataloging the different qualities of over 6,000 red and white variants of Portuguese "Vinho Verde" wine from 2004 to 2007. A wine's quality is based on its physicochemical properties, and this data set included 10 of such properties - thus reinforcing its use in our goal to predict wine quality.
