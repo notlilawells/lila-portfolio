@@ -100,7 +100,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
                   {showResume && (
                     <Button
-                      onClick={() => window.open("https://drive.google.com/file/d/1IxnemOqVktQoiRE7zhXfZp1evzwMoopb/view?usp=sharing")} // router.push("/resume")}
+                      onClick={() => router.push("/resume")}// window.open("https://drive.google.com/file/d/1IxnemOqVktQoiRE7zhXfZp1evzwMoopb/view?usp=sharing")} 
                       classes="first:ml-1"
                     >
                       Resume
@@ -138,7 +138,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             )}
             {showResume && (
               <Button
-                onClick={() => window.open("https://drive.google.com/file/d/1IxnemOqVktQoiRE7zhXfZp1evzwMoopb/view?usp=sharing")}// router.push("/resume")}
+                onClick={() => router.push("/resume")} // window.open("https://drive.google.com/file/d/1IxnemOqVktQoiRE7zhXfZp1evzwMoopb/view?usp=sharing")}// router.push("/resume")}
                 classes="first:ml-1"
               >
                 Resume
@@ -167,7 +167,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             )}
             {showResume && (
               <Button
-                onClick={() => window.open("https://drive.google.com/file/d/1IxnemOqVktQoiRE7zhXfZp1evzwMoopb/view?usp=sharing")} // router.push("/resume")}
+                onClick={() => router.push("/resume")} // window.open("https://drive.google.com/file/d/1IxnemOqVktQoiRE7zhXfZp1evzwMoopb/view?usp=sharing")}
                 classes="first:ml-1"
               >
                 Resume
